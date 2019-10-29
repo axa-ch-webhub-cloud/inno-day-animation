@@ -23,9 +23,8 @@
   }
 }
 
-.belly, .coat, .head, .hair {
+.belly, .coat, .head, .rightArmHand, .leftArmHand, .hair {
   animation: torso-slip 0.5s forwards 4.65s;
-  transform-origin: center center;
 }
 
 .animation {
@@ -34,11 +33,13 @@
 
 @keyframes torso-slip {
   from {
-      transform: rotate(0deg);
-    }
+    transform-origin: center center;
+    transform: rotate(0deg);
+  }
   
   to {
-      transform: rotate(-30deg)
+    transform-origin: center center;
+    transform: rotate(-30deg)
   }
   
 } 
