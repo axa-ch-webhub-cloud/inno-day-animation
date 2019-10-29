@@ -1,10 +1,12 @@
 .right-leg-group {
-  animation: walk 2s ease-in-out 0s infinite, right-group-leg-slip 0.5s forwards 4.5s;
+  animation: walk 2s ease-in-out 0s infinite,
+    right-group-leg-slip 0.5s forwards 4.5s;
   transform-origin: 50% 50%;
 }
 
 .left-leg-group {
-  animation: walk 2s ease-in-out 1s infinite, left-group-leg-slip 0.5s forwards 4.5s;
+  animation: walk 2s ease-in-out 1s infinite,
+    left-group-leg-slip 0.5s forwards 4.5s;
   transform-origin: 50% 50%;
 }
 
@@ -23,7 +25,10 @@
   }
 }
 
-.belly, .coat, .head, .hair {
+.belly,
+.coat,
+.head,
+.hair {
   animation: torso-slip 0.5s forwards 4.65s;
   transform-origin: center center;
 }
@@ -34,25 +39,32 @@
 
 @keyframes torso-slip {
   from {
-      transform: rotate(0deg);
-    }
-  
-  to {
-      transform: rotate(-30deg)
+    transform: rotate(0deg);
   }
-  
-} 
+
+  to {
+    transform: rotate(-30deg);
+  }
+}
 
 @keyframes left-group-leg-slip {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(-90deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
 }
 
 @keyframes right-group-leg-slip {
-    0% { transform: rotate(-17deg); }
-    100% { transform: rotate(-70deg); }
+  0% {
+    transform: rotate(-17deg);
+  }
+  100% {
+    transform: rotate(-70deg);
+  }
 }
-    
+
 .banana {
   animation: slide 10s forwards;
 }
@@ -64,4 +76,25 @@
   100% {
     transform: translateX(-200%);
   }
+}
+
+p {
+  width: 500px;
+  font-size: 24px;
+  align-self: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.title {
+  align-self: center;
 }
