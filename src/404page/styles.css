@@ -1,13 +1,10 @@
 .right-leg-group {
-  animation: walk 2s infinite;
-  animation-timing-function: ease-in-out;
+  animation: walk 2s ease-in-out 0s infinite, right-group-leg-slip 0.5s forwards 4s;
   transform-origin: 50% 50%;
 }
 
 .left-leg-group {
-  animation: walk 2s infinite;
-  animation-delay: 1s;
-  animation-timing-function: ease-in-out;
+  animation: walk 2s ease-in-out 1s infinite, left-group-leg-slip 0.5s forwards 4s;
   transform-origin: 50% 50%;
 }
 
@@ -25,3 +22,34 @@
     transform: rotate(0deg);
   }
 }
+
+.torso, .head, .hair {
+  animation: torso-slip 0.5s forwards 4.15s;
+  transform-origin: center center;
+}
+
+.animation {
+  position: relative;
+}
+
+@keyframes torso-slip {
+  from {
+      transform: rotate(0deg);
+    }
+  
+  to {
+      transform: rotate(-30deg)
+  }
+  
+} 
+
+@keyframes left-group-leg-slip {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-90deg); }
+}
+
+@keyframes right-group-leg-slip {
+    0% { transform: rotate(-17deg); }
+    100% { transform: rotate(-70deg); }
+}
+    
