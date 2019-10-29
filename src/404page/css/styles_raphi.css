@@ -2,10 +2,17 @@ body {
   /* background: blue; */
 }
 
-#right_leg {
-  animation: walk 10s infinite;
+.right-leg-group {
+  animation: walk 2s infinite;
   animation-timing-function: ease-in-out;
-  transform-origin: 0% 0%;
+  transform-origin: 50% 50%;
+}
+
+.left-leg-group {
+  animation: walk 2s infinite;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  transform-origin: 50% 50%;
 }
 
 @keyframes walk {
@@ -13,7 +20,7 @@ body {
     transform: rotate(0deg);
   }
   25% {
-    transform: rotate(90deg);
+    transform: rotate(30deg);
   }
   75% {
     transform: rotate(-50deg);
