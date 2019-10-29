@@ -1,12 +1,12 @@
 .right-leg-group {
   animation: walk 2s ease-in-out 0s infinite,
-    right-group-leg-slip 0.5s forwards 4.5s;
+    right-group-leg-slip 0.5s forwards 4.7s;
   transform-origin: 50% 50%;
 }
 
 .left-leg-group {
   animation: walk 2s ease-in-out 1s infinite,
-    left-group-leg-slip 0.5s forwards 4.5s;
+    left-group-leg-slip 0.5s forwards 4.7s;
   transform-origin: 50% 50%;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .belly, .coat, .head, .rightArmHand, .leftArmHand, .hair {
-  animation: torso-slip 0.5s forwards 4.65s;
+  animation: torso-slip 0.5s forwards 4.85s;
 }
 
 .animation {
@@ -63,8 +63,12 @@
   }
 }
 
+.animation {
+  margin: auto;
+}
+
 .banana {
-  animation: slide 10s forwards;
+  animation: slide 5.6s forwards;
 }
 
 @keyframes slide {
