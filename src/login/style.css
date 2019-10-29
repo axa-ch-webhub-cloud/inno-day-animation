@@ -130,8 +130,17 @@ a:hover {
   display: none;
 }
 
-.animation.sunglasses #sunglasses {
+.animation #sunglasses {
   position: absolute;
   top: 37px;
   width: 68px;
+  transform: translateY(-25px);
+  transition-timing-function: ease-in-out;
+  transition: 0.3s;
+}
+
+.animation.sunglasses #sunglasses {
+  transform: translateY(0);
+  transition-timing-function: ease-in-out;
+  transition: 0.3s;
 }
