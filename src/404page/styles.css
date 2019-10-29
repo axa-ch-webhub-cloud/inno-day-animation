@@ -33,7 +33,12 @@ header {
   }
 }
 
-.belly, .coat, .head, .rightArmHand, .leftArmHand, .hair {
+.belly,
+.coat,
+.head,
+.rightArmHand,
+.leftArmHand,
+.hair {
   animation: torso-slip 0.5s forwards 4.85s;
 }
 
@@ -46,10 +51,10 @@ header {
     transform-origin: center center;
     transform: rotate(0deg);
   }
-  
+
   to {
     transform-origin: center center;
-    transform: rotate(-30deg)
+    transform: rotate(-30deg);
   }
 }
 
@@ -88,12 +93,6 @@ header {
   }
 }
 
-p {
-  width: 500px;
-  font-size: 24px;
-  align-self: center;
-}
-
 .content {
   display: flex;
   flex-direction: column;
@@ -107,4 +106,33 @@ body {
 
 .title {
   align-self: center;
+
+  animation-name: fadein;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+p {
+  width: 500px;
+  font-size: 24px;
+  align-self: center;
+  opacity: 0;
+
+  animation-name: fadein;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
