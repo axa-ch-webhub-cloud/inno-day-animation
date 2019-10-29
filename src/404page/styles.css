@@ -1,10 +1,10 @@
 .right-leg-group {
-  animation: walk 2s ease-in-out 0s infinite, right-group-leg-slip 0.5s forwards 4s;
+  animation: walk 2s ease-in-out 0s infinite, right-group-leg-slip 0.5s forwards 4.5s;
   transform-origin: 50% 50%;
 }
 
 .left-leg-group {
-  animation: walk 2s ease-in-out 1s infinite, left-group-leg-slip 0.5s forwards 4s;
+  animation: walk 2s ease-in-out 1s infinite, left-group-leg-slip 0.5s forwards 4.5s;
   transform-origin: 50% 50%;
 }
 
@@ -23,8 +23,8 @@
   }
 }
 
-.torso, .head, .hair {
-  animation: torso-slip 0.5s forwards 4.15s;
+.belly, .coat, .head, .hair {
+  animation: torso-slip 0.5s forwards 4.65s;
   transform-origin: center center;
 }
 
