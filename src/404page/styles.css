@@ -101,7 +101,7 @@ header {
 body {
   display: flex;
   flex-direction: column;
-  font-family: 'Jomolhari', serif;
+  font-family: "Jomolhari", serif;
 }
 
 .title {
