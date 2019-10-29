@@ -53,3 +53,15 @@
     100% { transform: rotate(-70deg); }
 }
     
+.banana {
+  animation: slide 10s forwards;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(1000%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
